@@ -5,15 +5,15 @@ using UnityEngine.InputSystem;
 
 public class InputMasterControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    Vector2 move = Vector2.zero;
+
+    public void Move2(InputAction.CallbackContext context){
+        move = context.ReadValue<Vector2>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Update(){
+        if (move == Vector2.zero) return;
+        transform.position += (Vector3)move * Time.deltaTime;
     }
+    
 }
