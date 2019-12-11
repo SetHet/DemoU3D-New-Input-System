@@ -1,0 +1,189 @@
+{
+    "name": "NewControls",
+    "maps": [
+        {
+            "name": "Menu",
+            "id": "52eca22e-a1d9-4316-988c-a874f17214b3",
+            "actions": [
+                {
+                    "name": "Up",
+                    "type": "Button",
+                    "id": "6bbe8b71-7ffe-4dc0-8191-5636d57e47e2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Down",
+                    "type": "Button",
+                    "id": "5fa6c566-fb47-4ab5-a63f-86b046c05753",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "07bbe097-e605-4829-ba47-e7458912ec89",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "N1",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "457fbf99-086c-4e0e-8a89-8a97eda09583",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "Clamp(min=0.8,max=1)",
+                    "groups": "N1",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c81601d3-39b0-4b34-83a0-04f929186c25",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "N1",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "92483181-6f4f-4bd8-a516-5788e5f74a7e",
+                    "path": "<Keyboard>/#(W)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "N1",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f43502cc-dddb-413c-a9b3-56fa4d14c20e",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "N1",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ef267cd7-c397-414c-9b12-ce9a7c912c77",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "N1",
+                    "action": "Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "21f36acc-3d54-495e-813d-6f43b9c9e76f",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "Clamp(min=0.8,max=1)",
+                    "groups": "N1",
+                    "action": "Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fbc77d51-831a-4075-bcf1-1c32bb2f0666",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "N1",
+                    "action": "Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "191bfc1b-16aa-4e61-a157-a3c92b5734e9",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "N1",
+                    "action": "Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ceda8ec0-57ce-482e-8a5b-d6cf419516a8",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "N1",
+                    "action": "Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Play",
+            "id": "449af236-37c2-47ac-9825-a2d7e9496e6d",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "cb389991-9a00-482c-95f8-b97b47fc3658",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "56fdd9c8-1b44-43e5-b84b-4ff87048da1a",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "N1",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "N1",
+            "bindingGroup": "N1",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
