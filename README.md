@@ -1,4 +1,5 @@
 # Unity Demo: New Input System
- Implement new input system
  
- State: developing
+Implementation of the new input system
+ 
+State: developing
