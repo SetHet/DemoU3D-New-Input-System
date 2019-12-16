@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCamera : MonoBehaviour
+namespace PlayerCharacter
 {
-    // Start is called before the first frame update
-    void Start()
+    public class PlayerCamera : MonoBehaviour
     {
-        
-    }
+        public Camera cam;
+        public Transform player;
+        public Vector3 offset = new Vector3(0,2,-20);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        void Update()
+        {
+            cam.transform.position = player.position + offset;
+        }
     }
 }

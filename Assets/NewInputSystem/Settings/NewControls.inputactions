@@ -145,7 +145,7 @@
                     "id": "cb389991-9a00-482c-95f8-b97b47fc3658",
                     "expectedControlType": "Axis",
                     "processors": "",
-                    "interactions": "Hold"
+                    "interactions": ""
                 }
             ],
             "bindings": [
