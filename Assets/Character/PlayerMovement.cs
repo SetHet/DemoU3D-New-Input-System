@@ -12,8 +12,7 @@ namespace PlayerCharacter
 
         Vector2 moveAxis = Vector2.zero;
         bool jump = false;
-        public float jumpCoolDown = 0.1f;
-        float temp_jumpCoolDownTime = 0;
+        public Utilities.CoolDownTime jumpCoolDown = new Utilities.CoolDownTime(0.1f);
         bool ground = false;
 
         private void FixedUpdate()
@@ -69,10 +68,7 @@ namespace PlayerCharacter
             if (!ground) return; //si no hay suelo, se ignora
 
             //Revisar si se ha llamado al salto y el cooldown termine 
-            if (jump && temp_jumpCoolDownTime < Time.time){
-
-                //Actualizar cooldown
-                temp_jumpCoolDownTime = Time.time + jumpCoolDown; 
+            if (jump && jumpCoolDown.TimeOut()){
 
                 //Agregar velocidad vertical al presonaje
                 rigid.velocity += Vector2.up * 3;

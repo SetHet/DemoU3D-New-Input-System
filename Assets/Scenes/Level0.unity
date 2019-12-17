@@ -398,6 +398,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigid: {fileID: 170148436}
   coll: {fileID: 170148435}
+  jumpCoolDown:
+    timepause: 0.1
+    this_time: 0
+    auto: 1
 --- !u!114 &892221078
 MonoBehaviour:
   m_ObjectHideFlags: 0
