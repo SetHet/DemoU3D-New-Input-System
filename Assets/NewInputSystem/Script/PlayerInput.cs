@@ -17,5 +17,9 @@ namespace PlayerCharacter
             playerMovement.SetMoveAxis(moveAxis);
         }
 
+        public void Jump(InputAction.CallbackContext context){
+            playerMovement.Jump();
+        }
+
     }
 }
